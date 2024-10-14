@@ -1,0 +1,21 @@
+Stack (Primitive) vs Heap(Non Primitive)  
+
+Primitve datatypes are stored in stack. When any value is accessed or changed, a copy of that variable is given. 
+
+let myname="Harshitha"
+let othername=myname
+othername="Kay"
+
+console.log(myname) -Harshitha
+console.log(myname) -Kay 
+
+Whereas, when value of non primitive is accessed, the whole is referred. So if it can changes, the value is permanenetly changed. 
+
+let user1={
+    email="kay@mail.com",
+    upi="kay@ybl"
+}
+let user2=user1 
+user2.email="kay@google.com"
+console.log(user1.email) -kay@google.com
+console.log(user2.email) -kay@google.com
