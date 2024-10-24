@@ -15,19 +15,20 @@ let jsUser={
     [mySym]:"MYSYM" //The symbols are taken as keys in this way 
 }
 
-console.log(jsUser.email);
-console.log(jsUser["name"]); 
-//If we have any key that has string with spaces then we must use the []
+console.log(jsUser.length);
+// console.log(jsUser.email);
+// console.log(jsUser["name"]); 
+// //If we have any key that has string with spaces then we must use the []
 
-// If we wish to declare a symbol first and use it as key in objects then:
-console.log(typeof jsUser.mySym);// Gives the undefined, because dot notation works only with string keys, not symbols.
-console.log(typeof jsUser[mySym]); 
+// // If we wish to declare a symbol first and use it as key in objects then:
+// console.log(typeof jsUser.mySym);// Gives the undefined, because dot notation works only with string keys, not symbols.
+// console.log(typeof jsUser[mySym]); 
 
-//Changing the values of objects:
-jsUser.email="kay@hmail.com"
-//To not let the values of any keys change, i.e. the object, we use:
-// Object.freeze(jsUser)
-jsUser.email="hk@kmail.com"
-console.log(jsUser);    //The email change is not reflected, coz the object jsUSer is freezed 
+// //Changing the values of objects:
+// jsUser.email="kay@hmail.com"
+// //To not let the values of any keys change, i.e. the object, we use:
+// // Object.freeze(jsUser)
+// jsUser.email="hk@kmail.com"
+// console.log(jsUser);    //The email change is not reflected, coz the object jsUSer is freezed 
 
 

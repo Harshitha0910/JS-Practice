@@ -13,8 +13,8 @@ const heroine=["Ava","Jules","Bri"]
 // console.log(myFav);
 
 //flating - flats out the nested arrays based on the depth we give 
-// let arr=[1,2,3,4,[4,5,6,[6,7,8]],8,9];
-// let flatArr=arr.flat(Infinity)
+let arr=[1,2,3,4,[4,5,6,[6,7,8]],8,9];
+let flatArr=arr.flat(Infinity)
 // console.log(flatArr);
 
 //Sometimes we might not have the array, but would want to turn it to array. In such case we do: 
@@ -26,3 +26,7 @@ let score1 = 100
 let score2=200
 let score3=300 
 console.log(Array.of(score1,score2,score3));    //Converts to array given any set of values 
+
+console.log(hero.reverse()); 
+console.log(hero.join("-"));
+console.log(flatArr.sort());
